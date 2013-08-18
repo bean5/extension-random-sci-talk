@@ -1,14 +1,33 @@
 <!doctype html>
 <html>
-<head>
-	<title>Random Talk from the SCI Database</title>
-	<link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
-	<script type="text/javascript" src="js/main.js"></script>
-</head>
-<body>
-<!--
-http://scriptures.byu.edu/getscrip.php?book=1_ne&chap=2&range=2-4&jst=n&target=#3
--->
-<iframe id="talk_frame" width="500" height="500" src=""></iframe>
-</body>
+	<head>
+		<title>Random Talk from the SCI Database</title>
+		<link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</head>
+	<body>
+		<!--
+		http://scriptures.byu.edu/getscrip.php?book=1_ne&chap=2&range=2-4&jst=n&target=#3
+		-->
+		<div style="width:500px">
+			<div align="center">
+				<button onclick="javascript:selectPrevTalk()" style="width: 140px;">Previous talk</button>
+				<button onclick="javascript:selectRandomTalk()" style="width: 140px;">Random talk</button>
+				<button onclick="javascript:selectNextTalk()" style="width: 140px;">Next talk</button>
+			</div>
+			<iframe id="talk_frame" width="500" height="500" src=""></iframe>
+			<br />
+			<div style="display: none">
+				<br />
+				<span id="location_link">View this talk on scriptures.byu.edu</span>
+			</div>
+			<div align="center">
+				<button onclick="javascript:selectPrevTalk()" style="width: 140px;">Previous talk</button>
+				<button onclick="javascript:selectRandomTalk()" style="width: 140px;">Random talk</button>
+				<button onclick="javascript:selectNextTalk()" style="width: 140px;">Next talk</button>
+			</div>
+		</div>
+	</body>
 </html>
