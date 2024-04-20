@@ -5,7 +5,7 @@ function selectTalk(id) {
 	currentTalk = id;
 
 	//alert(randomTalkId);
-	var loc = "http://scriptures.byu.edu/gt3.php?ID=" + currentTalk;
+	var loc = `https://scriptures.byu.edu/content/talks_ajax/${currentTalk}`;
 	//alert(loc);
 	var talk_frame = document.getElementById('talk_frame');
 	talk_frame.src = loc;
